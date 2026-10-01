@@ -1,54 +1,0 @@
-Command: ninja flash
-[1/5] cd /home/fsarubbi/Data/UNSL/IoT/sensor-bme280-with-lib/build && /home/fsarubbi/.espressif/tools/python/v6.1/venv/bin/python /home/fsarubbi/.espressif/v6.1/esp-idf/components/partition_table/check_sizes.py --offset 0x8000 partition --type app /home/fsarubbi/Data/UNSL/IoT/sensor-bme280-with-lib/build/partition_table/partition-table.bin /home/fsarubbi/Data/UNSL/IoT/sensor-bme280-with-lib/build/temp_and_protocol.bin
-temp_and_protocol.bin binary size 0x44be0 bytes. Smallest app partition is 0x100000 bytes. 0xbb420 bytes (73%) free.
-[2/5] Performing build step for 'bootloader'
-[1/1] cd /home/fsarubbi/Data/UNSL/IoT/sensor-bme280-with-lib/build/bootloader && /home/fsarubbi/.espressif/tools/python/v6.1/venv/bin/python /home/fsarubbi/.espressif/v6.1/esp-idf/components/partition_table/check_sizes.py --offset 0x8000 bootloader 0x0 /home/fsarubbi/Data/UNSL/IoT/sensor-bme280-with-lib/build/bootloader/bootloader.bin
-Bootloader binary size 0x5650 bytes. 0x29b0 bytes (33%) free.
-[3/5] No install step for 'bootloader'
-[4/5] Completed 'bootloader'
-[4/5] Running utility command for flash
-esptool --chip esp32c6 -p /dev/ttyACM0 -b 460800 --before=default-reset --after=hard-reset write-flash --flash-mode dio --flash-freq 80m --flash-size 2MB 0x0 bootloader/bootloader.bin 0x8000 partition_table/partition-table.bin 0x10000 temp_and_protocol.bin --skip-flashed
-esptool v5.4.0
-Serial port /dev/ttyACM0:
-Connecting...
-[1A[2K[1A[2KConnected to ESP32-C6 on /dev/ttyACM0:
-Chip type:          ESP32-C6 (QFN40) (revision v0.2)
-Features:           Wi-Fi 6, BT 5 (LE), IEEE802.15.4, Single Core + LP Core, 160MHz, Unknown Embedded Flash
-Crystal frequency:  40MHz
-USB mode:           USB-Serial/JTAG
-MAC:                10:51:db:ff:fe:0e:12:b4
-BASE MAC:           10:51:db:0e:12:b4
-MAC_EXT:            ff:fe
-
-Uploading stub flasher...
-Running stub flasher...
-[1A[2K[1A[2KStub flasher running.
-Changing baud rate to 460800...
-Changed.
-
-Configuring flash size...
-
-Writing 'bootloader/bootloader.bin' at 0x00000000...
-SHA digest in image updated.
-Comparing flash contents against new data...
-[1A[2KFlash will be erased from 0x00000000 to 0x00005fff...
-Compressed 22096 bytes to 13920...
-[2KWriting at 0x00005650 [38;2;114;156;31m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m 100.0% 13.59kB/13.59kB [0s] 
-[1A[2K[1A[2KWrote 22096 bytes (13920 compressed) at 0x00000000 in 0.2 seconds (773.1 kbit/s).
-Verifying written data...
-[1A[2KHash of data verified.
-
-Writing 'partition_table/partition-table.bin' at 0x00008000...
-Comparing flash contents against new data...
-[1A[2K'partition_table/partition-table.bin' at 0x00008000 already in flash, skipping write.
-
-Writing 'temp_and_protocol.bin' at 0x00010000...
-Comparing flash contents against new data...
-[1A[2KFlash will be erased from 0x00010000 to 0x00054fff...
-Compressed 281568 bytes to 152265...
-[2KWriting at 0x0001b47a [38;2;249;38;114m━━━[0m[38;5;237m╺[0m[38;5;237m━━━━━━━━━━━━━━━━━━━━━━━━━━[0m  10.8% 16.00kB/148.70kB [0s] [2KWriting at 0x00021d91 [38;2;249;38;114m━━━━━━[0m[38;5;237m╺[0m[38;5;237m━━━━━━━━━━━━━━━━━━━━━━━[0m  21.5% 32.00kB/148.70kB [0s] [2KWriting at 0x00029129 [38;2;249;38;114m━━━━━━━━━[0m[38;2;249;38;114m╸[0m[38;5;237m━━━━━━━━━━━━━━━━━━━━[0m  32.3% 48.00kB/148.70kB [0s] [2KWriting at 0x00030495 [38;2;249;38;114m━━━━━━━━━━━━[0m[38;2;249;38;114m╸[0m[38;5;237m━━━━━━━━━━━━━━━━━[0m  43.0% 64.00kB/148.70kB [0s] [2KWriting at 0x00037c0d [38;2;249;38;114m━━━━━━━━━━━━━━━━[0m[38;5;237m╺[0m[38;5;237m━━━━━━━━━━━━━[0m  53.8% 80.00kB/148.70kB [0s] [2KWriting at 0x0003dcb7 [38;2;249;38;114m━━━━━━━━━━━━━━━━━━━[0m[38;5;237m╺[0m[38;5;237m━━━━━━━━━━[0m  64.6% 96.00kB/148.70kB [0s] [2KWriting at 0x0004383e [38;2;249;38;114m━━━━━━━━━━━━━━━━━━━━━━[0m[38;2;249;38;114m╸[0m[38;5;237m━━━━━━━[0m  75.3% 112.00kB/148.70kB [0s] [2KWriting at 0x0004a89a [38;2;249;38;114m━━━━━━━━━━━━━━━━━━━━━━━━━[0m[38;2;249;38;114m╸[0m[38;5;237m━━━━[0m  86.1% 128.00kB/148.70kB [1s] [2KWriting at 0x00051731 [38;2;249;38;114m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m[38;5;237m╺[0m  96.8% 144.00kB/148.70kB [1s] [2KWriting at 0x00054be0 [38;2;114;156;31m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m 100.0% 148.70kB/148.70kB [1s] 
-[1A[2K[1A[2KWrote 281568 bytes (152265 compressed) at 0x00010000 in 1.2 seconds (1867.9 kbit/s).
-Verifying written data...
-[1A[2KHash of data verified.
-
-Hard resetting via RTS pin...

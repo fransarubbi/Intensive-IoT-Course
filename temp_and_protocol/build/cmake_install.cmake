@@ -1,4 +1,4 @@
-# Install script for directory: /home/fsarubbi/Data/UNSL/IoT/sensor-bme280-with-lib
+# Install script for directory: /home/fsarubbi/Data/UNSL/Intensive-IoT-Course/temp_and_protocol
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -39,13 +39,13 @@ endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
-  include("/home/fsarubbi/Data/UNSL/IoT/sensor-bme280-with-lib/build/esp-idf/cmake_install.cmake")
+  include("/home/fsarubbi/Data/UNSL/Intensive-IoT-Course/temp_and_protocol/build/esp-idf/cmake_install.cmake")
 endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
 if(CMAKE_INSTALL_LOCAL_ONLY)
-  file(WRITE "/home/fsarubbi/Data/UNSL/IoT/sensor-bme280-with-lib/build/install_local_manifest.txt"
+  file(WRITE "/home/fsarubbi/Data/UNSL/Intensive-IoT-Course/temp_and_protocol/build/install_local_manifest.txt"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")
 endif()
 if(CMAKE_INSTALL_COMPONENT)
@@ -61,6 +61,6 @@ else()
 endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
-  file(WRITE "/home/fsarubbi/Data/UNSL/IoT/sensor-bme280-with-lib/build/${CMAKE_INSTALL_MANIFEST}"
+  file(WRITE "/home/fsarubbi/Data/UNSL/Intensive-IoT-Course/temp_and_protocol/build/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")
 endif()

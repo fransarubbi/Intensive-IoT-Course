@@ -13,8 +13,8 @@ end
 
 # Load bootloader symbols
 set confirm off
-    add-symbol-file /home/fsarubbi/Data/UNSL/IoT/sensor-bme280-with-lib/build/bootloader/bootloader.elf
+    add-symbol-file /home/fsarubbi/Data/UNSL/Intensive-IoT-Course/temp_and_protocol/build/bootloader/bootloader.elf
 set confirm on
 
 # Load application symbols
-file /home/fsarubbi/Data/UNSL/IoT/sensor-bme280-with-lib/build/temp_and_protocol.elf
+file /home/fsarubbi/Data/UNSL/Intensive-IoT-Course/temp_and_protocol/build/temp_and_protocol.elf

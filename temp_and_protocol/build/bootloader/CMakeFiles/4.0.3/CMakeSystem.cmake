@@ -3,7 +3,7 @@ set(CMAKE_HOST_SYSTEM_NAME "Linux")
 set(CMAKE_HOST_SYSTEM_VERSION "7.2.7-200.fc44.x86_64")
 set(CMAKE_HOST_SYSTEM_PROCESSOR "x86_64")
 
-include("/home/fsarubbi/Data/UNSL/IoT/sensor-bme280-with-lib/build/bootloader/toolchain/toolchain-esp32c6.cmake")
+include("/home/fsarubbi/Data/UNSL/Intensive-IoT-Course/temp_and_protocol/build/bootloader/toolchain/toolchain-esp32c6.cmake")
 
 set(CMAKE_SYSTEM "Generic")
 set(CMAKE_SYSTEM_NAME "Generic")

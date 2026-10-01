@@ -43516,7 +43516,7 @@
                     }
                 ],
                 "depends_on": null,
-                "id": "component-config-i2c-device-library-home-fsarubbi-Data-UNSL-IoT-sensor-bme280-with-lib-managed_components-esp-idf-lib__i2cdev-Kconfig-1",
+                "id": "component-config-i2c-device-library-home-fsarubbi-Data-UNSL-Intensive-IoT-Course-temp_and_protocol-managed_components-esp-idf-lib__i2cdev-Kconfig-1",
                 "title": "I2C Device Library",
                 "type": "menu"
             },

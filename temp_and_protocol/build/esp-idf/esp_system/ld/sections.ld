@@ -1,6 +1,6 @@
 /* Automatically generated file; DO NOT EDIT */
 /* Espressif IoT Development Framework Linker Script */
-/* Generated from: /home/fsarubbi/Data/UNSL/IoT/sensor-bme280-with-lib/build/esp-idf/esp_system/ld/sections.ld.in */
+/* Generated from: /home/fsarubbi/Data/UNSL/Intensive-IoT-Course/temp_and_protocol/build/esp-idf/esp_system/ld/sections.ld.in */
 
 /*
  * SPDX-FileCopyrightText: 2022 Espressif Systems (Shanghai) CO LTD

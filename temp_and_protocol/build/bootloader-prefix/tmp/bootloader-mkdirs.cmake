@@ -10,18 +10,18 @@ if(NOT EXISTS "/home/fsarubbi/.espressif/v6.1/esp-idf/components/bootloader/subp
   file(MAKE_DIRECTORY "/home/fsarubbi/.espressif/v6.1/esp-idf/components/bootloader/subproject")
 endif()
 file(MAKE_DIRECTORY
-  "/home/fsarubbi/Data/UNSL/IoT/sensor-bme280-with-lib/build/bootloader"
-  "/home/fsarubbi/Data/UNSL/IoT/sensor-bme280-with-lib/build/bootloader-prefix"
-  "/home/fsarubbi/Data/UNSL/IoT/sensor-bme280-with-lib/build/bootloader-prefix/tmp"
-  "/home/fsarubbi/Data/UNSL/IoT/sensor-bme280-with-lib/build/bootloader-prefix/src/bootloader-stamp"
-  "/home/fsarubbi/Data/UNSL/IoT/sensor-bme280-with-lib/build/bootloader-prefix/src"
-  "/home/fsarubbi/Data/UNSL/IoT/sensor-bme280-with-lib/build/bootloader-prefix/src/bootloader-stamp"
+  "/home/fsarubbi/Data/UNSL/Intensive-IoT-Course/temp_and_protocol/build/bootloader"
+  "/home/fsarubbi/Data/UNSL/Intensive-IoT-Course/temp_and_protocol/build/bootloader-prefix"
+  "/home/fsarubbi/Data/UNSL/Intensive-IoT-Course/temp_and_protocol/build/bootloader-prefix/tmp"
+  "/home/fsarubbi/Data/UNSL/Intensive-IoT-Course/temp_and_protocol/build/bootloader-prefix/src/bootloader-stamp"
+  "/home/fsarubbi/Data/UNSL/Intensive-IoT-Course/temp_and_protocol/build/bootloader-prefix/src"
+  "/home/fsarubbi/Data/UNSL/Intensive-IoT-Course/temp_and_protocol/build/bootloader-prefix/src/bootloader-stamp"
 )
 
 set(configSubDirs )
 foreach(subDir IN LISTS configSubDirs)
-    file(MAKE_DIRECTORY "/home/fsarubbi/Data/UNSL/IoT/sensor-bme280-with-lib/build/bootloader-prefix/src/bootloader-stamp/${subDir}")
+    file(MAKE_DIRECTORY "/home/fsarubbi/Data/UNSL/Intensive-IoT-Course/temp_and_protocol/build/bootloader-prefix/src/bootloader-stamp/${subDir}")
 endforeach()
 if(cfgdir)
-  file(MAKE_DIRECTORY "/home/fsarubbi/Data/UNSL/IoT/sensor-bme280-with-lib/build/bootloader-prefix/src/bootloader-stamp${cfgdir}") # cfgdir has leading slash
+  file(MAKE_DIRECTORY "/home/fsarubbi/Data/UNSL/Intensive-IoT-Course/temp_and_protocol/build/bootloader-prefix/src/bootloader-stamp${cfgdir}") # cfgdir has leading slash
 endif()

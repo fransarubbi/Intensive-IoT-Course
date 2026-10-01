@@ -1,4 +1,4 @@
-/* * Data converted from /home/fsarubbi/Data/UNSL/IoT/sensor-bme280-with-lib/build/esp-idf/mbedtls/x509_crt_bundle
+/* * Data converted from /home/fsarubbi/Data/UNSL/Intensive-IoT-Course/temp_and_protocol/build/esp-idf/mbedtls/x509_crt_bundle
  */
 .data
 #if !defined (__APPLE__) && !defined (__linux__)

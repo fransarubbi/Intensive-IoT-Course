@@ -167,11 +167,16 @@ void init_uart(void) {
     uart_set_pin(UART_NUM_1, TXD_PIN, RXD_PIN, UART_PIN_NO_CHANGE, UART_PIN_NO_CHANGE);
 }
 
-int sendData(const char* logName, const float* data) {
-    const int len = sizeof(data);
-    const int txBytes = uart_write_bytes(UART_NUM_1, data, len);
-    ESP_LOGI(logName, "Wrote %d bytes", txBytes);
-    return txBytes;
+// codifica y envia el mensaje completo por UART
+void send_uart_protocol_frame(const protocol_message_t *message) {
+    uint8_t uart_tx_buf[256];
+    size_t encoded_size = 0;
+    if (protocol_encode_message(message, uart_tx_buf, sizeof(uart_tx_buf), &encoded_size)) {
+        const int txBytes = uart_write_bytes(UART_NUM_1, uart_tx_buf, encoded_size);
+        ESP_LOGI("UART_TX", "Trama de protocolo enviada por UART: %d bytes", txBytes);
+    } else {
+        ESP_LOGE("UART_TX", "Error codificando la trama para UART");
+    }
 }
 
 static uint64_t get_time(void) {
@@ -277,7 +282,7 @@ static uint8_t process_message(const protocol_message_t *message) {
         float temperature = (float)encoded / 100.0f;
 
         ESP_LOGI(TAG, "Temperatura = %.2f C", temperature);
-        sendData(TX_TASK_TAG, &temperature);
+        send_uart_protocol_frame(message);
         return ACK_OK;
     }
 
@@ -383,7 +388,6 @@ void app_main(void) {
 
     if (NODE_ID == NODE_ID_RX) {
         init_uart();
-        static const char *TX_TASK_TAG = "TX_TASK";
         esp_log_level_set(TX_TASK_TAG, ESP_LOG_INFO);
     }
 

@@ -1,2 +1,2 @@
-source /home/fsarubbi/Data/UNSL/IoT/sensor-bme280-with-lib/build/bootloader/gdbinit/symbols
-source /home/fsarubbi/Data/UNSL/IoT/sensor-bme280-with-lib/build/bootloader/gdbinit/connect
+source /home/fsarubbi/Data/UNSL/Intensive-IoT-Course/temp_and_protocol/build/bootloader/gdbinit/symbols
+source /home/fsarubbi/Data/UNSL/Intensive-IoT-Course/temp_and_protocol/build/bootloader/gdbinit/connect
