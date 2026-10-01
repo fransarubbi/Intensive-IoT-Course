@@ -1,0 +1,2 @@
+source /home/fsarubbi/Data/UNSL/IoT/uart_async_rxtxtasks/build/bootloader/gdbinit/symbols
+source /home/fsarubbi/Data/UNSL/IoT/uart_async_rxtxtasks/build/bootloader/gdbinit/connect

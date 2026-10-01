@@ -1,0 +1,6 @@
+# El componente (biblioteca) del BME280. ESP-IDF lo descarga en el primer
+# "idf.py build" (hace falta Internet esa primera vez). Arrastra por su cuenta
+# esp-idf-lib/i2cdev, que en su version 2.x usa el driver I2C nuevo.
+dependencies:
+  idf: ">=5.3"
+  esp-idf-lib/bmp280: "*"

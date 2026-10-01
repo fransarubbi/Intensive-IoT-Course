@@ -1,0 +1,5 @@
+"-specs=/home/fsarubbi/Data/UNSL/IoT/uart_async_rxtxtasks/build/bootloader/specs/picolibc.specs"
+-mlongcalls
+-fno-builtin-memcpy
+-fno-builtin-memset
+-fno-builtin-bzero

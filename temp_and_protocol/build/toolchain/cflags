@@ -1,0 +1,2 @@
+-march=rv32imac_zicsr_zifencei_zaamo_zalrsc
+"-specs=/home/fsarubbi/Data/UNSL/IoT/sensor-bme280-with-lib/build/specs/picolibc.specs"

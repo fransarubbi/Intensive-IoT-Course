@@ -1,0 +1,17 @@
+{
+    "idf.currentSetup": "/Users/oscar/.espressif/v6.1/esp-idf",
+    "idf.openOcdConfigs": [
+        "board/esp32c6-lpcore-builtin.cfg"
+    ],
+    "idf.customExtraVars": {
+        "IDF_TARGET": "esp32c6"
+    },
+    "clangd.path": "/Users/oscar/.espressif/tools/esp-clangd/esp-21.1.3_20260408/esp-clangd/bin/clangd",
+    "clangd.arguments": [
+      "--background-index",
+      "--query-driver=**",
+      "--compile-commands-dir=/Users/oscar/Mon Drive/CPE/2025-2026/USAL/ejemplo_bme280_componente/build"
+    ],
+    "idf.flashType": "JTAG",
+    "idf.port": "/dev/tty.usbmodem2101"
+}

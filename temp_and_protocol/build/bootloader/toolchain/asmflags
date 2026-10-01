@@ -1,0 +1,2 @@
+"-specs=/home/fsarubbi/Data/UNSL/IoT/sensor-bme280-with-lib/build/bootloader/specs/picolibc.specs"
+-march=rv32imac_zicsr_zifencei_zaamo_zalrsc
