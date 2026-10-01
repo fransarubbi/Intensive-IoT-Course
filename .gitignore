@@ -1,0 +1,7 @@
+temp_and_protocol/build/
+temp_and_protocol/.cache/
+temp_and_protocol/.vscode/
+temp_and_protocol/managed_components/
+
+uart/.cache/
+uart/build/
